@@ -1,5 +1,5 @@
 class FunNewsController < ApplicationController
   def index
-    @title = NewsFetcher.new
+    @titles = NewsFetcher.new.titles.sample
   end
 end

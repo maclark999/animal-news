@@ -1,3 +1,10 @@
+<div class = "col-centered">
 <div class = "speech-bubble">
-<%= @title.titles.sample %>
+<%=link_to @titles[:title], @titles[:url], target: '_blank' %>
+
+
+</div>
+<div class = "picture">
+  <%= image_tag Dir.new(Rails.root.to_s + "/app/assets/images").to_a.select{|f| f.downcase.match(/\.jpg|\.jpeg|\.png/)}.sample, class: "image" %>
+</div>
 </div>

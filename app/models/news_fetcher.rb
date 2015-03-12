@@ -18,8 +18,15 @@ class NewsFetcher
 
  def titles
    @news = NewsFetcher.new
-   @news.news["data"]["children"].map do |child|
-     child["data"]["title"]
+   @headline = @news.news["data"]["children"].map do |child|
+     {title: child["data"]["title"], url: child["data"]["url"]}
+   end
+ end
+
+ def url
+   @news = NewsFetcher.new
+   @headline = @news.news["data"]["children"].map do |child|
+     child["data"]["url"]
    end
  end
 end

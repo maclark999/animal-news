@@ -21,9 +21,56 @@
   border-color: #eee transparent transparent transparent;
   border-style: solid;
   border-width: 10px;
-  height:0;
-  width:0;
+  /*height:0;
+  width:0;*/
   position:absolute;
   bottom:-19px;
   left:1em;
+}
+
+.center {
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  margin: auto;
+
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.picture{
+    width: 100px;
+    height: 100px;
+    /*-webkit-box-shadow: 0px 0px 10px #4d4d4d;
+    -moz-box-shadow: 0px 0px 10px #4d4d4d;
+    box-shadow: 0px 0px 10px #4d4d4d;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    /*border-radius: 8px;
+    border:solid white 3px;*/*/
+    overflow: hidden;
+    padding: 10px;
+}
+
+.image {
+    background: red;
+    padding: 0;
+     -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
 }
